@@ -1,0 +1,194 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover art, creativity and visual stories at Lillian Gallery.">
+  <title>Lillian Gallery | Art & Inspiration</title>
+  <style>
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: #f8f6f1;
+      color: #27251f;
+      font-family: Georgia, "Times New Roman", serif;
+    }
+    header {
+      padding: 25px 7%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid #e3ded4;
+    }
+    .logo { font-size: 25px; letter-spacing: 2px; }
+    nav a {
+      margin-left: 24px;
+      color: inherit;
+      text-decoration: none;
+      font: 13px Arial, sans-serif;
+      letter-spacing: 1px;
+    }
+    .hero {
+      min-height: 420px;
+      padding: 85px 7%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background: #e9e2d5;
+    }
+    .eyebrow {
+      font: 11px Arial, sans-serif;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+    }
+    h1 {
+      max-width: 750px;
+      font-size: clamp(42px, 7vw, 78px);
+      font-weight: normal;
+      line-height: 1.08;
+      margin: 22px 0;
+    }
+    .hero p {
+      max-width: 480px;
+      font: 15px/1.8 Arial, sans-serif;
+      color: #625d53;
+    }
+    .section { padding: 70px 7%; }
+    .section h2 { font-size: 35px; font-weight: normal; }
+    .intro {
+      max-width: 600px;
+      color: #625d53;
+      font: 15px/1.8 Arial, sans-serif;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 22px;
+      margin-top: 35px;
+    }
+    .artwork { margin: 0; }
+    .artwork img {
+      display: block;
+      width: 100%;
+      aspect-ratio: 4 / 5;
+      object-fit: cover;
+      background: #e4ded3;
+    }
+    .artwork h3 {
+      font-size: 20px;
+      font-weight: normal;
+      margin: 15px 0 5px;
+    }
+    .artwork p {
+      font: 12px Arial, sans-serif;
+      color: #777065;
+    }
+    .about {
+      background: #e9e2d5;
+      padding: 65px 7%;
+    }
+    .about p {
+      max-width: 650px;
+      font: 15px/1.9 Arial, sans-serif;
+      color: #625d53;
+    }
+    .contact { padding: 60px 7%; }
+    .contact a {
+      display: inline-block;
+      margin-top: 12px;
+      color: #27251f;
+    }
+    footer {
+      padding: 24px 7%;
+      border-top: 1px solid #e3ded4;
+      color: #777065;
+      font: 12px Arial, sans-serif;
+    }
+    @media (max-width: 650px) {
+      header { padding: 20px 5%; }
+      .logo { font-size: 19px; }
+      nav a { margin-left: 10px; font-size: 10px; }
+      .hero { padding: 65px 6%; }
+      .section { padding: 45px 6%; }
+      .gallery { grid-template-columns: 1fr; gap: 30px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">LILLIAN GALLERY</div>
+    <nav>
+      <a href="#gallery">ARTWORKS</a>
+      <a href="#about">ABOUT</a>
+      <a href="#contact">CONTACT</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="eyebrow">A Space for Art & Inspiration</div>
+      <h1>Art that speaks<br>to the soul.</h1>
+      <p>
+        Welcome to Lillian Gallery, a space celebrating
+        creativity, beauty and the stories behind every artwork.
+      </p>
+    </section>
+
+    <section class="section" id="gallery">
+      <div class="eyebrow">Selected Works</div>
+      <h2>Discover the Collection</h2>
+      <p class="intro">
+        Explore a collection of visual stories, artistic expressions
+        and moments of inspiration.
+      </p>
+
+      <div class="gallery">
+        <article class="artwork">
+          <img src="https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?auto=format&fit=crop&w=900&q=80"
+               alt="Framed artwork in an art gallery">
+          <h3>Quiet Moments</h3>
+          <p>Art & Expression</p>
+        </article>
+        <article class="artwork">
+          <img src="https://images.unsplash.com/photo-1577083552431-6e5fd01aa342?auto=format&fit=crop&w=900&q=80"
+               alt="Colorful abstract artwork">
+          <h3>Color & Form</h3>
+          <p>Modern Art</p>
+        </article>
+        <article class="artwork">
+          <img src="https://images.unsplash.com/photo-1578301978693-85fa9c0320b9?auto=format&fit=crop&w=900&q=80"
+               alt="Fine art painting">
+          <h3>Stories on Canvas</h3>
+          <p>Fine Art</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="eyebrow">Our Philosophy</div>
+      <h2>About Lillian Gallery</h2>
+      <p>
+        We believe art brings people together, inspires new ideas
+        and invites us to see the world differently. Lillian Gallery
+        is dedicated to celebrating artistic vision and timeless beauty.
+      </p>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="eyebrow">Get in Touch</div>
+      <h2>Let's Connect</h2>
+      <p class="intro">
+        For artwork enquiries, collaborations or exhibition information,
+        we would love to hear from you.
+      </p>
+      <a href="mailto:YOUR-EMAIL@example.com">Contact the Gallery →</a>
+    </section>
+  </main>
+
+  <footer>
+    © 2026 Lillian Gallery. All rights reserved.
+  </footer>
+</body>
+</html>
