@@ -1,194 +1,172 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Discover art, creativity and visual stories at Lillian Gallery.">
-  <title>Lillian Gallery | Art & Inspiration</title>
-  <style>
-    * { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
-    body {
-      margin: 0;
-      background: #f8f6f1;
-      color: #27251f;
-      font-family: Georgia, "Times New Roman", serif;
-    }
-    header {
-      padding: 25px 7%;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      border-bottom: 1px solid #e3ded4;
-    }
-    .logo { font-size: 25px; letter-spacing: 2px; }
-    nav a {
-      margin-left: 24px;
-      color: inherit;
-      text-decoration: none;
-      font: 13px Arial, sans-serif;
-      letter-spacing: 1px;
-    }
-    .hero {
-      min-height: 420px;
-      padding: 85px 7%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      background: #e9e2d5;
-    }
-    .eyebrow {
-      font: 11px Arial, sans-serif;
-      letter-spacing: 4px;
-      text-transform: uppercase;
-    }
-    h1 {
-      max-width: 750px;
-      font-size: clamp(42px, 7vw, 78px);
-      font-weight: normal;
-      line-height: 1.08;
-      margin: 22px 0;
-    }
-    .hero p {
-      max-width: 480px;
-      font: 15px/1.8 Arial, sans-serif;
-      color: #625d53;
-    }
-    .section { padding: 70px 7%; }
-    .section h2 { font-size: 35px; font-weight: normal; }
-    .intro {
-      max-width: 600px;
-      color: #625d53;
-      font: 15px/1.8 Arial, sans-serif;
-    }
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 22px;
-      margin-top: 35px;
-    }
-    .artwork { margin: 0; }
-    .artwork img {
-      display: block;
-      width: 100%;
-      aspect-ratio: 4 / 5;
-      object-fit: cover;
-      background: #e4ded3;
-    }
-    .artwork h3 {
-      font-size: 20px;
-      font-weight: normal;
-      margin: 15px 0 5px;
-    }
-    .artwork p {
-      font: 12px Arial, sans-serif;
-      color: #777065;
-    }
-    .about {
-      background: #e9e2d5;
-      padding: 65px 7%;
-    }
-    .about p {
-      max-width: 650px;
-      font: 15px/1.9 Arial, sans-serif;
-      color: #625d53;
-    }
-    .contact { padding: 60px 7%; }
-    .contact a {
-      display: inline-block;
-      margin-top: 12px;
-      color: #27251f;
-    }
-    footer {
-      padding: 24px 7%;
-      border-top: 1px solid #e3ded4;
-      color: #777065;
-      font: 12px Arial, sans-serif;
-    }
-    @media (max-width: 650px) {
-      header { padding: 20px 5%; }
-      .logo { font-size: 19px; }
-      nav a { margin-left: 10px; font-size: 10px; }
-      .hero { padding: 65px 6%; }
-      .section { padding: 45px 6%; }
-      .gallery { grid-template-columns: 1fr; gap: 30px; }
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f1e8">
+  <meta name="description" content="Zhang Mingyan is a Chinese painter based in Malta, exploring Gongbi, Baimiao, flower-and-bird painting, Dunhuang-inspired art, and the meeting of Eastern and Mediterranean cultures.">
+  <meta property="og:title" content="Zhang Mingyan | Chinese Painter in Malta">
+  <meta property="og:description" content="Traditional roots, contemporary eyes. Explore original Chinese paintings and exhibition opportunities.">
+  <meta property="og:type" content="website">
+  <title>Zhang Mingyan — Chinese Painter in Malta</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <div class="logo">LILLIAN GALLERY</div>
-    <nav>
-      <a href="#gallery">ARTWORKS</a>
-      <a href="#about">ABOUT</a>
-      <a href="#contact">CONTACT</a>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="wordmark" href="#home" aria-label="Zhang Mingyan home">Zhang Mingyan<span>CHINESE PAINTER · MALTA</span></a>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation"><span></span><span></span></button>
+    <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+      <a href="#artwork">Artwork</a>
+      <a href="#about">About</a>
+      <a href="#exhibitions">Exhibitions</a>
+      <a href="#contact" class="nav-contact">Contact <span aria-hidden="true">↗</span></a>
     </nav>
   </header>
 
-  <main>
-    <section class="hero">
-      <div class="eyebrow">A Space for Art & Inspiration</div>
-      <h1>Art that speaks<br>to the soul.</h1>
-      <p>
-        Welcome to Lillian Gallery, a space celebrating
-        creativity, beauty and the stories behind every artwork.
-      </p>
+  <main id="main">
+    <section id="home" class="hero">
+      <div class="hero-image" role="img" aria-label="A quiet studio atmosphere with Chinese painting and Mediterranean light"></div>
+      <div class="hero-wash"></div>
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-line"></span> A Chinese painter in Malta</p>
+        <h1>Traditional roots.<br><em>Contemporary eyes.</em></h1>
+        <p class="hero-intro">Through traditional Chinese painting, I explore the beauty of nature, the quiet strength of the human spirit, and the meeting of Eastern and Mediterranean cultures.</p>
+        <div class="hero-actions">
+          <a class="button button-dark" href="#artwork">Explore the artwork <span>↘</span></a>
+          <a class="text-link" href="#about">Meet the artist <span>→</span></a>
+        </div>
+      </div>
+      <div class="hero-note"><span>01 / 05</span><span>Art · Culture · Connection</span></div>
     </section>
 
-    <section class="section" id="gallery">
-      <div class="eyebrow">Selected Works</div>
-      <h2>Discover the Collection</h2>
-      <p class="intro">
-        Explore a collection of visual stories, artistic expressions
-        and moments of inspiration.
-      </p>
+    <section id="artwork" class="section artwork-section">
+      <div class="section-heading">
+        <div><p class="eyebrow">Selected directions</p><h2>My <em>artwork</em></h2></div>
+        <p class="section-note">Tradition is not a boundary.<br>It is a way of seeing.</p>
+      </div>
+      <div class="art-grid">
+        <article class="art-card art-card-large">
+          <a class="art-image image-gongbi" href="#contact" aria-label="Ask about Gongbi paintings">
+            <span class="image-label">01 — Figure painting</span>
+          </a>
+          <div class="art-card-copy"><div><h3>Gongbi</h3><p>Fine brushwork, layered colour, quiet detail.</p></div><a href="#contact" aria-label="Enquire about Gongbi paintings">↗</a></div>
+        </article>
+        <article class="art-card">
+          <a class="art-image image-flower" href="#contact" aria-label="Ask about flower and bird paintings">
+            <span class="image-label">02 — Nature</span>
+          </a>
+          <div class="art-card-copy"><div><h3>Flower &amp; Bird</h3><p>Small worlds, attentive observation.</p></div><a href="#contact" aria-label="Enquire about flower and bird paintings">↗</a></div>
+        </article>
+        <article class="art-card">
+          <a class="art-image image-baimiao" href="#contact" aria-label="Ask about Baimiao paintings">
+            <span class="image-label">03 — Line</span>
+          </a>
+          <div class="art-card-copy"><div><h3>Baimiao</h3><p>The expressive clarity of the line.</p></div><a href="#contact" aria-label="Enquire about Baimiao paintings">↗</a></div>
+        </article>
+        <article class="art-card">
+          <a class="art-image image-dunhuang" href="#contact" aria-label="Ask about Dunhuang-inspired paintings">
+            <span class="image-label">04 — Inner journey</span>
+          </a>
+          <div class="art-card-copy"><div><h3>Dunhuang</h3><p>Ancient colour, compassion, and stillness.</p></div><a href="#contact" aria-label="Enquire about Dunhuang-inspired paintings">↗</a></div>
+        </article>
+        <article class="art-card art-card-malta">
+          <a class="art-image image-malta" href="#contact" aria-label="Ask about the Malta-inspired series">
+            <span class="image-label">05 — Place</span>
+          </a>
+          <div class="art-card-copy"><div><h3>Malta Series</h3><p>A personal dialogue with the Mediterranean.</p></div><a href="#contact" aria-label="Enquire about Malta-inspired paintings">↗</a></div>
+        </article>
+      </div>
+      <p class="image-disclaimer">Artwork images are visual placeholders in this starter template. Replace them with photographs of your own paintings before publishing.</p>
+    </section>
 
-      <div class="gallery">
-        <article class="artwork">
-          <img src="https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?auto=format&fit=crop&w=900&q=80"
-               alt="Framed artwork in an art gallery">
-          <h3>Quiet Moments</h3>
-          <p>Art & Expression</p>
-        </article>
-        <article class="artwork">
-          <img src="https://images.unsplash.com/photo-1577083552431-6e5fd01aa342?auto=format&fit=crop&w=900&q=80"
-               alt="Colorful abstract artwork">
-          <h3>Color & Form</h3>
-          <p>Modern Art</p>
-        </article>
-        <article class="artwork">
-          <img src="https://images.unsplash.com/photo-1578301978693-85fa9c0320b9?auto=format&fit=crop&w=900&q=80"
-               alt="Fine art painting">
-          <h3>Stories on Canvas</h3>
-          <p>Fine Art</p>
-        </article>
+    <section id="about" class="about-section">
+      <div class="about-visual">
+        <div class="about-art-placeholder">
+          <span class="seal">明</span>
+          <p>以画会友</p>
+          <span class="about-visual-caption">A life between cultures</span>
+        </div>
+      </div>
+      <div class="about-copy">
+        <p class="eyebrow">The artist</p>
+        <h2>Between two worlds,<br><em>at home in art.</em></h2>
+        <p>I am Zhang Mingyan, a Chinese painter currently based in Malta. My practice is rooted in traditional Chinese painting, including Gongbi, Baimiao, flower-and-bird painting, and Dunhuang-inspired work.</p>
+        <p>Living in Malta has brought new colours, textures, architecture, and ways of seeing into my life. I am interested in the quiet connections between cultures, and in art as a space for attention, reflection, and understanding.</p>
+        <a class="text-link" href="#contact">Start a conversation <span>→</span></a>
+      </div>
+      <div class="about-side-note" aria-hidden="true">静观万物</div>
+    </section>
+
+    <section class="quote-section">
+      <div class="quote-mark" aria-hidden="true">“</div>
+      <blockquote>To paint is to pay attention —<br>to what is seen, and what is felt.</blockquote>
+      <p>A note on the practice</p>
+    </section>
+
+    <section id="exhibitions" class="exhibitions-section">
+      <div class="section-heading">
+        <div><p class="eyebrow">Work in the world</p><h2>Exhibitions &amp; <em>collaborations</em></h2></div>
+        <p class="section-note">Open to thoughtful collaborations<br>with galleries, curators, and art spaces.</p>
+      </div>
+      <div class="exhibition-row">
+        <span class="exhibition-index">01</span>
+        <div><h3>Exhibitions</h3><p>Selected exhibitions and group shows</p></div>
+        <span class="exhibition-status">Portfolio in progress</span>
+      </div>
+      <div class="exhibition-row">
+        <span class="exhibition-index">02</span>
+        <div><h3>Gallery representation</h3><p>Consignment, display, and sales enquiries</p></div>
+        <a href="#contact" class="row-arrow" aria-label="Contact about gallery representation">↗</a>
+      </div>
+      <div class="exhibition-row">
+        <span class="exhibition-index">03</span>
+        <div><h3>Workshops &amp; cultural exchange</h3><p>Traditional Chinese painting experiences</p></div>
+        <a href="#contact" class="row-arrow" aria-label="Contact about workshops">↗</a>
+      </div>
+      <p class="small-note">Add confirmed exhibition names, venues, and dates here as your portfolio grows. Do not publish unconfirmed events.</p>
+    </section>
+
+    <section class="studio-section">
+      <div class="studio-image" role="img" aria-label="Painting materials and warm Mediterranean studio light"></div>
+      <div class="studio-copy">
+        <p class="eyebrow">Original works</p>
+        <h2>A painting finds<br><em>its next home.</em></h2>
+        <p>Interested in an original work, a commission, or displaying my paintings in your space? Tell me a little about what you have in mind.</p>
+        <a class="button button-light" href="#contact">Enquire about a work <span>↗</span></a>
       </div>
     </section>
 
-    <section class="about" id="about">
-      <div class="eyebrow">Our Philosophy</div>
-      <h2>About Lillian Gallery</h2>
-      <p>
-        We believe art brings people together, inspires new ideas
-        and invites us to see the world differently. Lillian Gallery
-        is dedicated to celebrating artistic vision and timeless beauty.
-      </p>
-    </section>
-
-    <section class="contact" id="contact">
-      <div class="eyebrow">Get in Touch</div>
-      <h2>Let's Connect</h2>
-      <p class="intro">
-        For artwork enquiries, collaborations or exhibition information,
-        we would love to hear from you.
-      </p>
-      <a href="mailto:sdjnzmy@hotmail.com">Contact the Gallery →</a>
+    <section id="contact" class="contact-section">
+      <div class="contact-intro">
+        <p class="eyebrow">Contact</p>
+        <h2>Let’s make<br><em>a connection.</em></h2>
+        <p>For artwork enquiries, exhibitions, gallery opportunities, commissions, or cultural collaborations, please get in touch.</p>
+      </div>
+      <div class="contact-details">
+        <!-- Replace the email below with your preferred public contact address. -->
+        <a class="email-link" href="mailto:YOUR-EMAIL@example.com">YOUR-EMAIL@example.com <span>↗</span></a>
+        <p class="contact-location">Based in Malta · Available for selected collaborations</p>
+        <div class="social-links">
+          <!-- Replace # with your actual profile URLs. -->
+          <a href="#" aria-label="Instagram profile">Instagram ↗</a>
+          <a href="#" aria-label="Facebook profile">Facebook ↗</a>
+          <a href="#" aria-label="TikTok profile">TikTok ↗</a>
+        </div>
+        <p class="contact-hint">Before publishing, update the email address and social links in <code>index.html</code>.</p>
+      </div>
     </section>
   </main>
 
-  <footer>
-    © 2026 Lillian Gallery. All rights reserved.
+  <footer class="site-footer">
+    <a class="footer-wordmark" href="#home">Zhang Mingyan</a>
+    <p>Traditional Chinese painting · Malta</p>
+    <a href="#home" class="back-top">Back to top ↑</a>
+    <span class="copyright">© <span id="year"></span> Zhang Mingyan</span>
   </footer>
+  <script src="script.js"></script>
 </body>
 </html>
